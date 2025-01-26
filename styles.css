@@ -131,7 +131,9 @@ a:visited {
 
 .hero-text p > img {
     float: left;
+    -webkit-shape-outside: url(img/hero.png);
     shape-outside: url(img/hero.png);
+    shape-margin: 10px;
 }
 
 /* ==============================
