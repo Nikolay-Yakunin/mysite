@@ -1,0 +1,339 @@
+/* ==============================
+   Базовые стили
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martian Mono', monospace;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, p {
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* ==============================
+   Стили для ссылок
+================================= */
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #333;
+}
+
+/* Навигационные ссылки */
+.nav a { 
+    font-size: 20px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #333;
+    background: #fff;
+}
+
+/* ==============================
+   Стили секций
+================================= */
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #333;
+    height: 150px;
+}
+
+.section-title {
+    font-family: 'Goblin One', sans-serif;
+    font-size: 66px;
+    white-space: nowrap;
+}
+
+.section-content {
+    margin-top: 50px;
+}
+
+/* ==============================
+   Навигация
+================================= */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav li {
+    font-family: 'Martian Mono', monospace;
+}
+
+/* ==============================
+   Hero-секция
+================================= */
+
+.section-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text p {
+    margin: 0;
+}
+
+#hero {
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* ==============================
+   Секция "Обо мне"
+================================= */
+
+#about-me .section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 35px;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-card_vertical {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-card_vertical h3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.about-card p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.about-card_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Дополнительные элементы секции */
+#web {
+    position: relative;
+    top: 20px;
+    letter-spacing: 40px;
+}
+
+#devops {
+    letter-spacing: 3px;
+}
+
+#programming, #education, #other{
+    letter-spacing: 11px;
+}
+
+/* ==============================
+   Секция "Проекты"
+================================= */
+
+#projects .section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card_img {
+    width: 317px;
+    height: 220px;
+    object-fit: fill;
+}
+
+.project-card_title {
+    padding: 10px 0;
+}
+
+.project-card_text {
+    font-size: 14px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* ==============================
+   Секция "Контакты"
+================================= */
+
+#contact .section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+/* Стили для формы */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Martian Mono', monospace;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: 'Martian Mono', monospace;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+/* Стили для социальных сетей */
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+/* ==============================
+   Подвал
+================================= */
+
+footer {
+    height: 363px;
+    background-color: #000;
+}
+
+footer h1 {
+    font-family: 'Goblin One', sans-serif;
+    font-size: 66px;
+    color: #fff;
+    padding: 140px 0;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+/* ==============================
+   Адаптивные стили
+================================= */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .footer {
+        padding: 5px 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+}

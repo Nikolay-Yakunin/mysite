@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySite</title>
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap" rel="stylesheet">
+
+    <!-- Подключение скриптов -->
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section id="home" class="section">
+            <nav class="nav">
+                <a href="#">Nikolai Yakunin.</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="section-header">
+
+                    <h1 class="section-title">MyPage</h1>
+                    <p class="section-text">Привет! Это Коля, создатель и хозяин этой страницы. Здесь ты найдешь мой
+                        мини-блог, моё портфолио и мои контакты. Если ты хочешь, чтобы я связался с тобой, то тут же
+                        есть форма обратной связи!</p>
+
+            </div>
+            <div class="section-hero">
+                <img src="img/hero.png" alt="Hero image" id="hero">
+                <div class="hero-text">
+                    <p>Основным моим родом</p>
+                    <p>деятельности и увлечением,</p>
+                    <p>является - Програмирование,</p>
+                    <p>и смежные с ним темы.</p>
+                    <p>В детстве, я увлекался</p>
+                    <p>фехтованием, и несмотря на</p>
+                    <p>свое плохое здоровье,</p>
+                    <p>добивался и достигал</p>
+                    <p>результатов. Как факт,</p>
+                    <p>реакция и моторика,</p>
+                    <p>развитая при работе с</p>
+                    <p>саблей, до сих пор при мне.</p>
+                    <p>Основной и главной</p>
+                    <p>дизайнерской страстью, была</p>
+                    <p>и будет типографика. Для</p>
+                    <p>меня очень важен текст и</p>
+                    <p>формы, что его окружают.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Обо мне -->
+        <section id="about-me" class="section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">Первый компьютер, после ~4х лет, перестал тянуть систему, пришлось перейти на
+                    линукс. Тогда я научился искать и исправлять ошибки :)</p>
+            </div>
+            <div class="section-content">
+                <div class="about-card about-card_vertical">
+                    <h3 id="web">Web</h3>
+                    <p>Vaniila: Js Html5 CSS3<br>
+                        <br>
+                        Style: SCSS TailWind<br>
+                        <br>
+                        Framework: Ts React NextJs<br>
+                        <br>
+                        StateManeger: Redux MobX<br>
+                        <br>
+                        Backend: Express</p>
+                </div>
+                <div class="about-card about-card_vertical">
+                    <h3 id="devops">DevOps</h3>
+                    <p>Scripting: Bash PowerShell Python<br>
+                        <br>
+                        Container: Docker<br>
+                        <br>
+                        OS: Windows (server) Linux (Ubuntu) CisOS<br>
+                        <br>
+                        Network: CCNA<br>
+                        <br>
+                        Other: WSL</p>
+                </div>
+                <div class="about-card">
+                    <h3 id="programming">Programming</h3>
+                    <p><br>Lang: C Rust Go | SQL | R<br>
+                        <br>
+                        DB: MySQL MongoDB<br>
+                        <br>
+                        GNU Lib: Qt<br>
+                        <br>
+                        Other: Git</p>
+                </div>
+                <div class="about-card_wrap">
+                    <div class="about-card">
+                        <h3 id="education">Education</h3>
+                        <p><br>АлтГТУ: ИСП-31 (23-26г)<br>
+                            <br>
+                            School 21: (C DevOps SQL Go) 24y - Now</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 id="other">Other</h3>
+                        <p><br>English: B1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Проекты -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-text">Тут будет текст...</p>
+            </div>
+            <div class="section-content">
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+                <div class="project-card">
+                    <img class="project-card_img" src="img/PolishNotation.png" alt="Sin">
+                    <h3 class="project-card_title">Polish notation</h3>
+                    <p class="project-card_text">CLI приложение для визуализации выражения<br>
+                        Реализован набор стандартных операций и функций<br>"+" "-" (унарный и бинарный)<br>"*" "/" "()"<br>sin(x) cos(x) tan(x) ctg(x)<br><br>Язык: C | Платформа: Unix</p>
+                </div>
+            </div>
+        </section>
+        <!-- Контакты -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+            </div>
+            <div class="section-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="social-icons">
+                    <img src="img/ava.jpg" alt="Nikolai Yakunin">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://github.com/Nikolay-Yakunin" target="_blank">
+                            GitHub
+                        </a>
+                        <a href="https://t.me/Nicolay_Yakunin" target="_blank">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer" class="section">
+            <h1>Nikolai Yakunin.</h1>
+        </section>
+    </footer>
+</body>
+
+</html>
