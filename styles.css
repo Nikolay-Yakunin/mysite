@@ -116,24 +116,22 @@ a:visited {
    Hero-секция
 ================================= */
 
-.section-hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .hero-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-text p {
     margin: 0;
+    width: 100%;
+    line-height: 1.7;
 }
 
-#hero {
-    margin-right: 20px;
-    object-fit: cover;
+.hero-text p > img {
+    float: left;
+    shape-outside: url(img/hero.png);
 }
 
 /* ==============================
