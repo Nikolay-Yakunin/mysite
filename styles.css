@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Martian Mono', monospace;
+    box-sizing: border-box;
 }
 
 body {
@@ -274,6 +275,11 @@ a:visited {
     outline: none;
 }
 
+.form-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 /* Стили для социальных сетей */
 
 .social-icons {
@@ -284,22 +290,16 @@ a:visited {
     margin-top: 20px;
 }
 
-
-
 .social-icons a {
     display: inline-block;
     transition: transform 0.3s;
 }
-
-
 
 .social-icons img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-
-
 
 .social-icons a:hover {
     text-decoration: none;
@@ -313,9 +313,6 @@ a:visited {
     transition: transform 0.1s ease-out;
     will-change: transform;
 }
-
-
-
 
 /* ==============================
    Подвал
@@ -339,35 +336,102 @@ footer h1 {
     white-space: nowrap;
 }
 
+footer span {
+    display: none;
+}
+
 /* ==============================
    Адаптивные стили
 ================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     h1 {
         font-size: 1.5em;
     }
-
     h2 {
         font-size: 1.25em;
     }
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #about-me .section-content {
+        grid-template-columns: 1fr;
+    }
+    .about-card {
+        margin: 0 auto;
+    }
+    #projects .section-content {
+        grid-template-columns: 1fr;
+    }
+    #contact .section-content {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
+    nav ul>li:first-child {
+        display: none;
+    }
+    header .section-header {
+        display: none;
+    }
 
+    .section-hero {
+        display: none;
+    }
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0;
+    }
+    .section-text {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
     .header,
     .footer {
         padding: 5px 0;
     }
-
     h1,
     h2,
     h3 {
         font-size: 1em;
     }
-}
-
-.form-message {
-    margin-top: 10px;
-    font-size: 14px;
+    .nav a {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .hero-text p {
+        font-size: 16px;
+    }
+    .about-card p {
+        font-size: 12px;
+    }
+    .project-card_img {
+        width: 100%;
+        height: auto;
+    }
+    .social-icons img {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+    footer h1 {
+        display: none;
+    }
+    footer span {
+        font-family: 'Goblin one';
+        display: block;
+        font-size: 66px;
+        letter-spacing: -20px;
+        color: #fff;
+    }
 }
