@@ -326,6 +326,10 @@ footer {
     background-color: #000;
 }
 
+footer a:hover {
+    text-decoration: none;
+}
+
 footer h1 {
     font-family: 'Goblin One', sans-serif;
     font-size: 66px;
