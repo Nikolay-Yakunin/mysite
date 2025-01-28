@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const email = 'akuninn52@gmail.com';
+    const hashedEmail = CryptoJS.MD5(email.trim().toLowerCase());
+    const gravatarUrl = `https://www.gravatar.com/avatar/${hashedEmail}?s=200`;
+    document.getElementById('gravatar-image').src = gravatarUrl;
+});
 const avatar = document.querySelector('.avatar');
 
 avatar.addEventListener('mousemove', (e) => {
