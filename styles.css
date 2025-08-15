@@ -210,6 +210,10 @@ a:visited {
     margin-top: 10px;
 }
 
+#projects a {
+   text-decoration: none;
+}
+
 .project-card {
     transition: transform 0.3s;
 }
