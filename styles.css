@@ -166,7 +166,7 @@ a:visited {
 .about-card_vertical h3 {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    line-height: 1.5;
+    line-height: 0.5;
     font-size: 20px;
 }
 
